@@ -53,7 +53,7 @@
   "advancements.orc.root.title": "The Savage Warrior",
   "advancements.orc.root.description": "Choose the Orc Origin.",
   "advancements.orc.visiting_family.title": "Visiting Family",
-  "advancements.orc.visiting_family.description": "Travel to the Nether.",
+  "advancements.orc.visiting_family.description": "Travel to the Nether as an Orc.",
 
   "advancements.traveler.root.title": "The Mysterious Wanderer",
   "advancements.traveler.root.description": "Choose the Traveler Origin.",
@@ -85,6 +85,7 @@
   "item.fantasyorigins.traveler_stone": "Traveler Stone",
   "item.fantasyorigins.nether_portal_bottle": "Nether Bottle",
   "item.fantasyorigins.end_portal_bottle": "End Bottle",
+  "item.fantasyorigins.goblin_spawn_egg": "Goblin Spawn Egg",
   "item.fantasyorigins.triton_trident": "Triton Trident",
   "item.fantasyorigins.elven_bow": "Elven Bow",
   "item.fantasyorigins.spear": "Spear",
@@ -215,7 +216,7 @@
   "power.fantasyorigins.surface_blindness.name": "Surface Blindness",
   "power.fantasyorigins.surface_blindness.description": "Too much sunlight blinds Dwarves unless they are wearing helmets",
   "power.fantasyorigins.surface_fatigue.name": "Surface Fatigue",
-  "power.fantasyorigins.surface_fatique.description": "Dwarves exhaust faster on the surface.",
+  "power.fantasyorigins.surface_fatigue.description": "Dwarves exhaust faster on the surface.",
   "power.fantasyorigins.traveler_teleport.name": "Traveler Teleport",
   "power.fantasyorigins.traveler_teleport.description": "Traveler's are able to slip between Dimensions to move quickly, similar to teleportation. (Secondary Ability)",
   "power.fantasyorigins.traveler_truce.name": "Traveler Truce",
@@ -234,7 +235,6 @@
   "power.fantasyorigins.wolfkind_biology.description": "Wolfkind are fast but weaker due to their lean stature.",
   "power.fantasyorigins.wolfkind_diet.name": "Wolfkind Diet",
   "power.fantasyorigins.wolfkind_diet.description": "Wolfkind are able to consume raw meat and get extra nutrition from it.",
-
 
   "sound_event.fantasyorigins.traveler_teleport": "Traveler Teleport",
   "sound_event.fantasyorigins.dimension_travel": "Dimension Travel",
