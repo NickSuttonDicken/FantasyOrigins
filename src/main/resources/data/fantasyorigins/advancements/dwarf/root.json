@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:dwarven_blast_furnace"
+    },
+    "title" : {
+      "translate": "advancements.dwarf.root.title"
+    },
+    "description": {
+      "translate": "advancements.dwarf.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/copper_block.png"
+  },
+  "criteria": {
+    "dwarf": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:dwarf"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dwarf"
+    ]
+  ]
+}

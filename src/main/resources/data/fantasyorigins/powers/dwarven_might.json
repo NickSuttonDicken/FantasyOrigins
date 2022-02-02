@@ -1,0 +1,13 @@
+{
+  "type": "origins:modify_break_speed",
+  "block_condition": {
+    "type": "origins:height",
+    "comparison": "<=",
+	"compare_to": 32
+  },
+  "modifier": {
+    "name": "Depth Mining break speed bonus",
+    "value": 0.5,
+    "operation": "multiply_base"
+  }
+}

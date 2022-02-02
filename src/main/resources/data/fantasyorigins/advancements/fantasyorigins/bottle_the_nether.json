@@ -1,0 +1,38 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/root",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:nether_portal_bottle"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.bottle_the_nether.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.bottle_the_nether.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bottle_nether_portal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:nether_portal_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bottle_nether_portal"
+    ]
+  ]
+}

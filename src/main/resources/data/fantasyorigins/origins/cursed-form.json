@@ -1,0 +1,20 @@
+{
+	"powers":[
+		"fantasyorigins:cursed_transform_back",
+		"fantasyorigins:cursed_transform_back_death",
+		"fantasyorigins:cursed_form_biology",
+		"fantasyorigins:cursed_form_size_modifier",
+		"fantasyorigins:cursed_form_healing",
+		"fantasyorigins:misshapen_body",
+		"fantasyorigins:cursed_form_particles",
+		"fantasyorigins:heat_exhaustion",
+		"origins:water_vulnerability",
+		"origins:fire_immunity",
+		"origins:hotblooded"
+		
+	],
+	"icon": "minecraft:dragon_breath",
+	"order": 10,
+	"impact": 3,
+	"unchoosable": true
+}

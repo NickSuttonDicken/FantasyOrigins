@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"fantasyorigins:triton_spawn",
+		"fantasyorigins:triton_biology",
+		"fantasyorigins:triton_biology_modifier",
+		"fantasyorigins:triton_warrior",
+		"fantasyorigins:ocean_power",
+		"fantasyorigins:dry_fatigue",
+		"fantasyorigins:fish_diet",
+		"fantasyorigins:triton_swimming",
+		"origins:like_water",
+		"origins:aquatic"
+	],
+	"icon": "fantasyorigins:triton_trident",
+	"order": 7,
+	"impact": 3
+}

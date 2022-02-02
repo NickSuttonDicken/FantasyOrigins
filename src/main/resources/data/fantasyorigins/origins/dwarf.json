@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"fantasyorigins:dark_vision",
+		"fantasyorigins:heavy_armor",
+		"fantasyorigins:dwarven_might",
+		"fantasyorigins:depth_sleep",
+		"fantasyorigins:surface_fatigue",
+		"fantasyorigins:dwarven_size",
+		"fantasyorigins:dwarven_size_modifiers",
+		"fantasyorigins:dwarven_skin",
+		"fantasyorigins:dwarven_smelting",
+		"fantasyorigins:surface_blindness"
+	],
+	"icon": "fantasyorigins:dwarven_blast_furnace",
+	"order": 2,
+	"impact": 2
+}

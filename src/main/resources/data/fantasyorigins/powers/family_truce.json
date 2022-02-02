@@ -1,0 +1,7 @@
+{
+	"type": "extraorigins:mob_neutrality",
+	"entity_types": [
+		"minecraft:piglin",
+		"minecraft:piglin_brute"
+	]
+}

@@ -1,0 +1,16 @@
+{
+ "replace": false,
+ "origins": [
+ 	"fantasyorigins:elf",
+ 	"fantasyorigins:triton",
+ 	"fantasyorigins:dwarf",
+ 	"fantasyorigins:halfling",
+ 	"fantasyorigins:orc",
+   "fantasyorigins:cursed",
+   "fantasyorigins:cursed-form",
+   "fantasyorigins:traveler",
+   "fantasyorigins:wolfkind",
+   "fantasyorigins:goblin",
+   "fantasyorigins:ghoul"
+ ]
+}

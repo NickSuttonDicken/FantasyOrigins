@@ -1,0 +1,47 @@
+{
+  "parent": "fantasyorigins:triton/root",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:triton_trident"
+    },
+    "title": {
+      "translate": "advancements.triton.worthy_weapon.title"
+    },
+    "description": {
+      "translate": "advancements.triton.worthy_weapon.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_triton_trident": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:triton_trident"
+            ]
+          }
+        ]
+      }
+    },
+    "triton": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:triton"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use_triton_trident"
+    ],
+    [
+      "triton"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "fantasyorigins:traveler/root",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:traveler_stone"
+    },
+    "title": {
+      "translate": "advancements.traveler.first_dimension_travel.title"
+    },
+    "description": {
+      "translate": "advancements.traveler.first_dimension_travel.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "first_dimension_travel": {
+      "trigger": "fantasyorigins:first_dimension_travel"
+    }
+  },
+  "requirements": [
+    [
+      "first_dimension_travel"
+    ]
+  ]
+}

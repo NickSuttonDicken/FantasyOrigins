@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "X": {
+      "item": "minecraft:trident"
+    },
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "fantasyorigins:triton_trident"
+  }
+}

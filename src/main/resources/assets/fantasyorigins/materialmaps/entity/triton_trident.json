@@ -1,0 +1,12 @@
+{
+  "map": [
+    {
+      "predicate": {
+        "materialPredicate": {
+          "texture": "fantasyorigins:textures/entity/triton_trident.png"
+        }
+      },
+      "material": "canvas:emissive_transform"
+    }
+  ]
+}

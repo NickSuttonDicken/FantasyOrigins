@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "fantasyorigins:block/halfling_oven_top",
+    "bottom": "fantasyorigins:block/halfling_oven_bottom",
+    "front": "fantasyorigins:block/halfling_oven_front",
+    "side": "fantasyorigins:block/halfling_oven_side"
+  }
+}

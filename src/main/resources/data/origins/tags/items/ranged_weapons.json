@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:crossbow",
+    "minecraft:bow",
+    "minecraft:trident",
+    "fantasyorigins:triton_trident",
+    "fantasyorigins:spear",
+    "fantasyorigins:elven_bow"
+  ]
+}

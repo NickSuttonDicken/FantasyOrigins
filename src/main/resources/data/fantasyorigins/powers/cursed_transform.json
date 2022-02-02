@@ -1,0 +1,19 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [{
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:origin fantasyorigins:cursed-form"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.ender_dragon.growl voice @s ~ ~ ~ 100 1"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.5 0.1 0.1 80 force"
+            }
+        ]
+    }
+}

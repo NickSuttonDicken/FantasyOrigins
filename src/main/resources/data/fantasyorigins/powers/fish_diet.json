@@ -1,0 +1,17 @@
+{
+  "type": "origins:modify_food",
+  "item_condition": {
+  	"type": "origins:ingredient",
+  	"ingredient": {
+  		"tag": "fishes"
+  	}
+  },
+  "food_modifier": {
+  	"value": 2,
+  	"operation": "addition"
+  },
+  "saturation_modifier":{
+  	"value": 0.3,
+  	"operation": "addition"
+  }
+}

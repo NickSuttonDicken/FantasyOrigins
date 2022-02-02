@@ -1,0 +1,36 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/root",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:nether_portal_bottle"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.drink_the_nether.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.drink_the_nether.description",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "drink_nether_portal": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "fantasyorigins:nether_portal_bottle"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "drink_nether_portal"
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"fantasyorigins:undead",
+		"fantasyorigins:undead_brethren",
+		"fantasyorigins:sun_aversion",
+		"fantasyorigins:rotten_diet",
+		"fantasyorigins:rotten_diet_modifiers",
+		"fantasyorigins:rotten_diet_cake_modifier",
+		"fantasyorigins:ghoulish_stomach",
+		"fantasyorigins:poison_attack",
+		"fantasyorigins:ghoulish_stature",
+		"fantasyorigins:ghoulish_stature_modifier",
+		"fantasyorigins:dark_vision"
+	],
+	"icon": "minecraft:rotten_flesh",
+	"order": 9,
+	"impact": 3
+}

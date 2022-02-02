@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"fantasyorigins:halfling_size",
+		"fantasyorigins:halfling_size_modifiers",
+		"fantasyorigins:halfling_jump_modifiers",
+		"fantasyorigins:halfling_sneak",
+		"fantasyorigins:halfling_luck",
+		"fantasyorigins:halfling_cooking"
+	],
+	"icon": "fantasyorigins:halfling_oven",
+	"order": 3,
+	"impact": 2
+}

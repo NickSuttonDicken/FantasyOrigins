@@ -1,0 +1,38 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/an_elegant_weapon",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:triton_trident"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.ruler_of_the_sea.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.ruler_of_the_sea.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "triton_trident": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:triton_trident"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "triton_trident"
+    ]
+  ]
+}

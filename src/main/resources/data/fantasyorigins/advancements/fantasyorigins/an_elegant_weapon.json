@@ -1,0 +1,38 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/primitive_yet_effective",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:elven_bow"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.an_elegant_weapon.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.an_elegant_weapon.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "elven_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:elven_bow"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "elven_bow"
+    ]
+  ]
+}

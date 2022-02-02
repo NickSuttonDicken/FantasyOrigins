@@ -1,0 +1,17 @@
+{
+	"powers":[
+		"fantasyorigins:dimensional_travel",
+		"fantasyorigins:traveler_teleport",
+		"fantasyorigins:traveler_particles",
+		"fantasyorigins:inbetween_worlds",
+		"fantasyorigins:strain_of_dimensions",
+		"fantasyorigins:knowledge_of_all_worlds",
+		"fantasyorigins:dimensional_wear",
+		"fantasyorigins:traveler_model_color",
+		"fantasyorigins:traveler_truce"
+
+	],
+	"icon": "fantasyorigins:traveler_stone",
+	"order": 4,
+	"impact": 2
+}

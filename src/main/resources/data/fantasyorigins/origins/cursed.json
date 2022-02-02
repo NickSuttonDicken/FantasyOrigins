@@ -1,0 +1,10 @@
+{
+	"powers":[
+		"fantasyorigins:cursed_transform",
+		"fantasyorigins:frail_body",
+		"origins:hotblooded"
+	],
+	"icon": "minecraft:dragon_breath",
+	"order": 10,
+	"impact": 3
+}

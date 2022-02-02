@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fantasyorigins:items/traveler_stone_2"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "charged": 1
+      },
+      "model": "fantasyorigins:item/traveler_stone_charged"
+    }
+  ]
+}

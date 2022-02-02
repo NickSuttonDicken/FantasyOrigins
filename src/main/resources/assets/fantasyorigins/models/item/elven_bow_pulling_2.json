@@ -1,0 +1,6 @@
+{
+  "parent": "fantasyorigins:item/elven_bow",
+  "textures": {
+    "layer0": "fantasyorigins:items/elven_bow_pulling_2"
+  }
+}

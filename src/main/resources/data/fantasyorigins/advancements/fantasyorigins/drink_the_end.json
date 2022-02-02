@@ -1,0 +1,36 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/bottle_the_end",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:end_portal_bottle"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.drink_the_end.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.drink_the_end.description",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "drink_end_portal": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "fantasyorigins:end_portal_bottle"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "drink_end_portal"
+    ]
+  ]
+}

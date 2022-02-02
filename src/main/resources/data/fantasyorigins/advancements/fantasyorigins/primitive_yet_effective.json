@@ -1,0 +1,38 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/root",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:spear"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.primitive_yet_effective.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.primitive_yet_effective.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:spear"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spear"
+    ]
+  ]
+}

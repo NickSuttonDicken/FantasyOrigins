@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"fantasyorigins:dark_vision",
+		"fantasyorigins:elven_grace",
+		"fantasyorigins:elven_grace_snow",
+		"fantasyorigins:elven_agility",
+		"fantasyorigins:bow_mastery",
+		"fantasyorigins:bow_mastery_arrows",
+		"fantasyorigins:underground_fatigue",
+		"fantasyorigins:long_range_fighter",
+		"origins:sprint_jump"
+	],
+	"icon": "fantasyorigins:elven_bow",
+	"order": 1,
+	"impact": 1
+}

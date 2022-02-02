@@ -1,0 +1,11 @@
+  
+{
+  "type": "origins:attribute",
+  "modifier": 
+	{
+	  "name": "Origin modifier",
+	  "attribute": "generic.movement_speed",
+	  "value": 0.03,
+	  "operation": "addition"
+	}
+}

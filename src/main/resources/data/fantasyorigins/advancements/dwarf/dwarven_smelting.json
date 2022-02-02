@@ -1,0 +1,28 @@
+{
+  "parent": "fantasyorigins:dwarf/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "title": {
+      "translate": "advancements.dwarf.dwarven_smelting.title"
+    },
+    "description": {
+      "translate": "advancements.dwarf.dwarven_smelting.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "dwarven_smelting": {
+      "trigger": "fantasyorigins:dwarven_smelting"
+    }
+  },
+  "requirements": [
+    [
+      "dwarven_smelting"
+    ]
+  ]
+}

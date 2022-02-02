@@ -1,0 +1,6 @@
+{
+  "parent": "fantasyorigins:item/traveler_stone",
+  "textures": {
+    "layer0": "fantasyorigins:items/traveler_stone_1"
+  }
+}

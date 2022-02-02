@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "I#I"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:soul_soil"
+    },
+    "X": {
+      "item": "minecraft:blast_furnace"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "fantasyorigins:dwarven_blast_furnace"
+  }
+}

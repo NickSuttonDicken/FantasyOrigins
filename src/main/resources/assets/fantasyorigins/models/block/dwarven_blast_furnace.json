@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "fantasyorigins:block/dwarven_blast_furnace_top",
+    "front": "fantasyorigins:block/dwarven_blast_furnace_front",
+    "side": "fantasyorigins:block/dwarven_blast_furnace_side"
+  }
+}

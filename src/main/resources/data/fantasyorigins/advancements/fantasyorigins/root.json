@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:triton_trident"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.root.title",
+      "color": "white",
+      "bold": false
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.root.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/beacon.png"
+  },
+  "criteria": {
+    "location": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "location"
+    ]
+  ]
+}

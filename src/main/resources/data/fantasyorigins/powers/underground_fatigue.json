@@ -1,0 +1,27 @@
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+        "name": "Increased exhaustion",
+        "operation": "multiply_base",
+        "value": 1.0
+  },
+  "condition": {
+  	"type": "origins:and",
+  	"conditions": [
+  		{
+  			"type": "origins:on_block",
+  			"block_condition": {
+  				"type": "origins:height",
+  				"comparison": ">=",
+  				"compare_to": 62
+  			},
+  			"inverted": true
+  		},
+  		{
+  			"type": "origins:exposed_to_sky",
+  			"inverted": true
+  		}
+  	]
+  	
+  }
+}

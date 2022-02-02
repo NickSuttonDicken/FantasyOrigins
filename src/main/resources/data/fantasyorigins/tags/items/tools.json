@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_sword",
+    "minecraft:wooden_axe",
+    "minecraft:stone_sword",
+    "minecraft:stone_axe",
+    "minecraft:golden_sword",
+    "minecraft:golden_axe",
+    "minecraft:iron_shovel",
+    "minecraft:iron_pickaxe",
+    "minecraft:iron_sword",
+    "minecraft:iron_axe",
+    "minecraft:diamond_shovel",
+    "minecraft:diamond_pickaxe",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_shovel",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_sword",
+    "minecraft:netherite_axe",
+    "minecraft:trident"
+  ]
+}

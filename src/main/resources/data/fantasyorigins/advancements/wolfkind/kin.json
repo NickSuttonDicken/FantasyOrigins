@@ -1,0 +1,49 @@
+{
+  "parent": "fantasyorigins:wolfkind/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:bone"
+    },
+    "title": {
+      "translate": "advancements.wolfkind.kin.title"
+    },
+    "description": {
+      "translate": "advancements.wolfkind.kin.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tame_wolf": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:wolf"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "wolfkind": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:wolfkind"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tame_wolf"
+    ],
+    [
+      "wolfkind"
+    ]
+  ]
+}

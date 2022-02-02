@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bone"
+    },
+    "title" : {
+      "translate": "advancements.wolfkind.root.title"
+    },
+    "description": {
+      "translate": "advancements.wolfkind.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/bone_block_side.png"
+  },
+  "criteria": {
+    "wolfkind": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:wolfkind"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wolfkind"
+    ]
+  ]
+}

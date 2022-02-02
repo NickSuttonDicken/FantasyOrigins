@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:spear"
+    },
+    "title" : {
+      "translate": "advancements.goblin.root.title"
+    },
+    "description": {
+      "translate": "advancements.goblin.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/dirt_path_top.png"
+  },
+  "criteria": {
+    "goblin": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:goblin"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "goblin"
+    ]
+  ]
+}

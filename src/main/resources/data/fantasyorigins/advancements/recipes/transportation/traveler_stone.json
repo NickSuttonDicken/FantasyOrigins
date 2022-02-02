@@ -1,0 +1,60 @@
+{
+  "parent": "fantasyorigins:recipes/root",
+  "rewards": {
+    "recipes": [
+      "fantasyorigins:traveler_stone"
+    ]
+  },
+  "criteria": {
+    "has_star": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_star"
+            ]
+          }
+        ]
+      }
+    },
+    "has_nether_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:nether_portal_bottle"
+            ]
+          }
+        ]
+      }
+    },
+    "has_end_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:end_portal_bottle"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "fantasyorigins:spear"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_star",
+      "has_nether_bottle",
+      "has_end_bottle",
+      "has_the_recipe"
+    ]
+  ]
+}

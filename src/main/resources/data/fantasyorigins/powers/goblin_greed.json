@@ -1,0 +1,9 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Luck increase",
+        "attribute": "minecraft:generic.luck",
+        "value": 4,
+        "operation": "addition"
+    }
+}

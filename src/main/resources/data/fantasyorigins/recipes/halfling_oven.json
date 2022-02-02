@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "I#I"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:soul_soil"
+    },
+    "X": {
+      "item": "minecraft:smoker"
+    },
+    "I": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "item": "fantasyorigins:halfling_oven"
+  }
+}

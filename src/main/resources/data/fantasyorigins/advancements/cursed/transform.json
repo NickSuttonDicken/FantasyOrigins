@@ -1,0 +1,32 @@
+{
+  "parent": "fantasyorigins:cursed/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:dragon_breath"
+    },
+    "title": {
+      "translate": "advancements.cursed.transform.title"
+    },
+    "description": {
+      "translate": "advancements.cursed.transform.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cursed_form": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:cursed-form"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cursed_form"
+    ]
+  ]
+}

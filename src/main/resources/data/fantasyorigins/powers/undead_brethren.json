@@ -1,0 +1,15 @@
+{
+	"type": "extraorigins:mob_neutrality",
+	"entity_types": [
+		"minecraft:zombie",
+		"minecraft:skeleton",
+		"minecraft:drowned",
+		"minecraft:stray",
+		"minecraft:wither_skeleton",
+		"minecraft:zoglin",
+		"minecraft:zombie_villager",
+		"minecraft:zombified_piglin",
+		"minecraft:phantom",
+		"minecraft:husk"
+	]
+}

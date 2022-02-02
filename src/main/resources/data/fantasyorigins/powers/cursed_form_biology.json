@@ -1,0 +1,18 @@
+{
+  "type": "origins:attribute",
+  "modifiers":
+  [
+  	{
+      "name": "Attack damage modifier",
+      "attribute": "generic.attack_damage",
+      "operation": "addition",
+      "value": 6.0
+    },
+		{
+	  	"name": "Origin modifier",
+	  	"attribute": "generic.max_health",
+	  	"value": 20,
+	  	"operation": "addition"
+		}
+	]
+}

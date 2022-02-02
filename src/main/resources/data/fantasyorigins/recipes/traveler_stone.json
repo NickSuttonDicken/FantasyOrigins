@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BDB",
+    "NBE",
+    "B#B"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_star"
+    },
+    "B": {
+      "item": "minecraft:blackstone"
+    },
+    "N": {
+      "item": "fantasyorigins:nether_portal_bottle"
+    },
+    "E": {
+      "item": "fantasyorigins:end_portal_bottle"
+    },
+    "D": {
+      "item": "minecraft:dragon_egg"
+    }
+  },
+  "result": {
+    "item": "fantasyorigins:traveler_stone"
+  }
+}

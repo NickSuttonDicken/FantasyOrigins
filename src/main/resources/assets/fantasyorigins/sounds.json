@@ -1,0 +1,48 @@
+{
+  "traveler_teleport": {
+    "subtitle": "subtitles.fantasyorigins.traveler_teleport",
+    "sounds": [
+      "fantasyorigins:traveler_teleport"
+    ]
+  },
+  "dimension_travel": {
+    "subtitle": "subtitles.fantasyorigins.dimension_travel",
+    "sounds": [
+      "fantasyorigins:dimension_travel"
+    ]
+  },
+  "nether_portal_bottle": {
+    "subtitle": "subtitles.fantasyorigins.nether_portal_bottle",
+    "sounds": [
+      "fantasyorigins:nether_portal_bottle"
+    ]
+  },
+  "end_portal_bottle": {
+    "subtitle": "subtitles.fantasyorigins.end_portal_bottle",
+    "sounds": [
+      "fantasyorigins:end_portal_bottle"
+    ]
+  },
+  "goblin_hurt": {
+    "subtitle": "subtitles.fantasyorigins.goblin_hurt",
+    "sounds": [
+      "fantasyorigins:goblin_hurt",
+      "fantasyorigins:goblin_hurt_2",
+      "fantasyorigins:goblin_hurt_3"
+    ]
+  },
+  "goblin_death": {
+    "subtitle": "subtitles.fantasyorigins.goblin_death",
+    "sounds": [
+      "fantasyorigins:goblin_death"
+    ]
+  },
+  "goblin_ambient": {
+    "subtitle": "subtitles.fantasyorigins.goblin_ambient",
+    "sounds": [
+      "fantasyorigins:goblin_ambient",
+      "fantasyorigins:goblin_ambient_2",
+      "fantasyorigins:goblin_ambient_3"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+ {
+  "type": "origins:prevent_sleep",
+  "block_condition": {
+    "type": "origins:height",
+	"comparison": ">=",
+	"compare_to": 32
+  },
+  "message": "You can not sleep here, try a bed lower than or equal to y = 32."
+}

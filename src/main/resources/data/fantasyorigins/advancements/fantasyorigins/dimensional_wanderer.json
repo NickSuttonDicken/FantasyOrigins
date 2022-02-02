@@ -1,0 +1,38 @@
+{
+  "parent": "fantasyorigins:fantasyorigins/bottle_the_end",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:traveler_stone"
+    },
+    "title": {
+      "translate": "advancements.fantasyorigins.dimensional_wanderer.title"
+    },
+    "description": {
+      "translate": "advancements.fantasyorigins.dimensional_wanderer.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "traveler_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:traveler_stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "traveler_stone"
+    ]
+  ]
+}

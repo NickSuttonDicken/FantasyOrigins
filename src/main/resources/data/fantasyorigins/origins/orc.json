@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"fantasyorigins:orcish_stature",
+		"fantasyorigins:orcish_stature_modifiers",
+		"fantasyorigins:orcish_warrior",
+		"fantasyorigins:orcish_rage",
+		"fantasyorigins:no_ranged",
+		"fantasyorigins:orcish_hunger",
+		"fantasyorigins:family_truce",
+		"fantasyorigins:orc_reach",
+		"origins:no_shield",
+		"origins:carnivore"
+	],
+	"icon": "minecraft:netherite_axe",
+	"order": 8,
+	"impact": 2
+}

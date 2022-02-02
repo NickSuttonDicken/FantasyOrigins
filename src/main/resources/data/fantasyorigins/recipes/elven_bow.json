@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " II",
+    "#XI",
+    " II"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:bow"
+    },
+    "I": {
+      "tag": "fantasyorigins:vines"
+    }
+  },
+  "result": {
+    "item": "fantasyorigins:elven_bow"
+  }
+}

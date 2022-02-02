@@ -1,0 +1,16 @@
+{
+	"powers":[
+		"fantasyorigins:dark_vision",
+		"fantasyorigins:wolfkind_biology",
+		"fantasyorigins:wolfkind_biology_size_modifiers",
+		"fantasyorigins:full_moon_strength",
+		"fantasyorigins:alpha",
+		"fantasyorigins:wolfkind_diet",
+		"fantasyorigins:pack_mentality",
+		"origins:fall_immunity",
+		"origins:carnivore"	
+	],
+	"icon": "minecraft:bone",
+	"order": 5,
+	"impact": 2
+}

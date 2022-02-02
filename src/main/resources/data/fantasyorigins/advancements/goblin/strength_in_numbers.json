@@ -1,0 +1,28 @@
+{
+  "parent": "fantasyorigins:goblin/root",
+  "display": {
+    "icon": {
+      "item": "fantasyorigins:spear"
+    },
+    "title": {
+      "translate": "advancements.goblin.strength_in_numbers.title"
+    },
+    "description": {
+      "translate": "advancements.goblin.strength_in_numbers.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "strength_in_numbers": {
+      "trigger": "fantasyorigins:strength_in_numbers"
+    }
+  },
+  "requirements": [
+    [
+      "strength_in_numbers"
+    ]
+  ]
+}

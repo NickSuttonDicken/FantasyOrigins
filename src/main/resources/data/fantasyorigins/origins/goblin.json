@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"fantasyorigins:goblin_size",
+		"fantasyorigins:goblin_size_modifiers",
+		"fantasyorigins:goblin_greed",
+		"fantasyorigins:goblin_tribe",
+		"fantasyorigins:strength_in_numbers",
+		"fantasyorigins:dark_vision"
+	],
+	"icon": "fantasyorigins:spear",
+	"order": 6,
+	"impact": 2
+}

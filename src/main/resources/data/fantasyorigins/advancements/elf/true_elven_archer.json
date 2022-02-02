@@ -1,0 +1,47 @@
+{
+  "parent": "fantasyorigins:elf/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:arrow"
+    },
+    "title": {
+      "translate": "advancements.elf.true_elven_archer.title"
+    },
+    "description": {
+      "translate": "advancements.elf.true_elven_archer.description",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_elven_bow": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fantasyorigins:elven_bow"
+            ]
+          }
+        ]
+      }
+    },
+    "elf": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "fantasyorigins:elf"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use_elven_bow"
+    ],
+    [
+      "elf"
+    ]
+  ]
+}

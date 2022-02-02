@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "fantasy-origins",
+  "version": "${version}",
+  "name": "FantasyOrigins",
+  "description": "",
+  "authors": [
+    "FroztiGaming"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fantasyorigins/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "froztigaming.fantasyorigins.client.FantasyOriginsClient"
+    ],
+    "main": [
+      "froztigaming.fantasyorigins.FantasyOrigins"
+    ]
+  },
+  "mixins": [
+    "fantasyOrigins.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.10",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  },
+  "accessWidener": "fantasyorigins.accesswidener"
+}
