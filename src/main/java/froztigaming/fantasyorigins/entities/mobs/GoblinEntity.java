@@ -32,6 +32,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.TridentItem;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.Box;
@@ -47,8 +48,6 @@ import java.util.List;
 
 public class GoblinEntity extends HostileEntity implements RangedAttackMob {
     private static List<GoblinEntity> goblinEntities = new ArrayList<>();
-
-
 
     public GoblinEntity(EntityType<? extends GoblinEntity> entityType, World world) {
         super(entityType, world);
@@ -220,6 +219,11 @@ public class GoblinEntity extends HostileEntity implements RangedAttackMob {
     @Override
     public boolean canUsePortals() {
         return true;
+    }
+
+    @Override
+    public SoundCategory getSoundCategory() {
+        return SoundCategory.HOSTILE;
     }
 
     @Override
