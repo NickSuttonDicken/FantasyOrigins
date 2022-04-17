@@ -7,14 +7,6 @@ import froztigaming.fantasyorigins.entities.items.TritonTridentEntity;
 import froztigaming.fantasyorigins.init.EntityInit;
 import froztigaming.fantasyorigins.init.ItemInit;
 import froztigaming.fantasyorigins.init.SoundInit;
-import net.fabricmc.fabric.api.renderer.v1.Renderer;
-import net.fabricmc.fabric.api.renderer.v1.RendererAccess;
-import net.minecraft.block.NetherPortalBlock;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.RenderLayers;
-import net.minecraft.client.render.debug.DebugRenderer;
-import net.minecraft.client.render.entity.WolfEntityRenderer;
-import net.minecraft.client.render.entity.model.EndermanEntityModel;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
@@ -30,21 +22,18 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.item.TridentItem;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
-import net.minecraft.world.LocalDifficulty;
-import net.minecraft.world.ServerWorldAccess;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldView;
+import net.minecraft.world.*;
 import org.jetbrains.annotations.Nullable;
-import org.spongepowered.include.com.google.common.base.Predicates;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class GoblinEntity extends HostileEntity implements RangedAttackMob {
     private static List<GoblinEntity> goblinEntities = new ArrayList<>();
@@ -87,6 +76,10 @@ public class GoblinEntity extends HostileEntity implements RangedAttackMob {
         return HostileEntity.createHostileAttributes().add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0).add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f).add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.0F);
     }
 
+    public static boolean canSpawn(EntityType<GoblinEntity> type, WorldAccess worldAccess, SpawnReason spawnReason, BlockPos blockPos, Random random) {
+        return isSpawnDark((ServerWorldAccess) worldAccess, blockPos, random);
+    }
+
     @Override
     public double getHeightOffset() {
         return this.isBaby() ? -0.05 : -0.45;
@@ -96,12 +89,6 @@ public class GoblinEntity extends HostileEntity implements RangedAttackMob {
     public EntityGroup getGroup() {
         return EntityGroup.DEFAULT;
     }
-
-    @Override
-    public boolean canSpawn(WorldView world) {
-        return super.canSpawn(world);
-    }
-
 
     @Override
     public void tick() {

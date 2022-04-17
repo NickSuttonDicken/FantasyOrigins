@@ -15,13 +15,12 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnGroup;
+import net.fabricmc.fabric.mixin.object.builder.SpawnRestrictionAccessor;
+import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
 
 import java.util.function.Predicate;
@@ -50,7 +49,9 @@ public class EntityInit {
 
     public static final EntityType<GoblinEntity> GOBLIN = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(MODID, "goblin"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, GoblinEntity::new)
+            FabricEntityTypeBuilder.createMob()
+                    .spawnGroup(SpawnGroup.MONSTER)
+                    .entityFactory(GoblinEntity::new)
                     .dimensions(EntityDimensions.fixed(0.75F, 1.75F))
                     .trackRangeBlocks(32).build()
     );
@@ -65,15 +66,14 @@ public class EntityInit {
 
     public static void init() {
         TRITON_TRIDENT = register("triton_trident", createTridentEntityType(TritonTridentEntity::new));
-
         SPEAR = register("spear", createTridentEntityType(SpearEntity::new));
-
 
         FabricDefaultAttributeRegistry.register(GOBLIN, GoblinEntity.createGoblinAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 14));
 
         SpawnGroup spawnGroup = SpawnGroup.MONSTER;
 
         BiomeModifications.addSpawn(goblinSpawnKeys, spawnGroup, GOBLIN, 8, 2, 4);
+        SpawnRestrictionAccessor.callRegister(GOBLIN, SpawnRestriction.Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, GoblinEntity::canSpawn);
     }
 
     @Environment(EnvType.CLIENT)
