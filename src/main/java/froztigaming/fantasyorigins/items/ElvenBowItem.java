@@ -14,8 +14,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.world.World;
 
-import java.util.Random;
-
 public class ElvenBowItem extends BowItem {
 
     public ElvenBowItem(Settings settings) {

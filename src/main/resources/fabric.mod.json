@@ -23,9 +23,11 @@
     "fantasyOrigins.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.10",
-    "fabric": "*",
-    "minecraft": "1.18.1"
+    "fabricloader": ">=0.13.3",
+    "fabric": ">=0.50.0",
+    "minecraft": "1.18.2",
+    "fabric-api-base": "*",
+    "java": ">=17"
   },
   "accessWidener": "fantasyorigins.accesswidener"
 }

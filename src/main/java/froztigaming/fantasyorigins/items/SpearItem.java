@@ -3,12 +3,11 @@ package froztigaming.fantasyorigins.items;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import froztigaming.fantasyorigins.entities.items.SpearEntity;
-import froztigaming.fantasyorigins.init.ItemInit;
-import froztigaming.fantasyorigins.utils.EffectsUtil;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.*;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.MovementType;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -80,7 +79,7 @@ public class SpearItem extends TridentItem {
                         k *= n / m;
                         l *= n / m;
                         playerEntity.addVelocity((double) h, (double) k, (double) l);
-                        playerEntity.setRiptideTicks(20);
+                        playerEntity.useRiptide(20);
                         if (playerEntity.isOnGround()) {
                             float o = 1.1999999F;
                             playerEntity.move(MovementType.SELF, new Vec3d(0.0D, 1.1999999284744263D, 0.0D));

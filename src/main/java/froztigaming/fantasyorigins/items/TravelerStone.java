@@ -1,25 +1,13 @@
 package froztigaming.fantasyorigins.items;
 
-import froztigaming.fantasyorigins.advancement.criterion.FantasyOriginsCriteria;
-import froztigaming.fantasyorigins.init.StatInit;
 import froztigaming.fantasyorigins.utils.DimensionTravelUtil;
-import net.minecraft.client.item.ModelPredicateProviderRegistry;
-import net.minecraft.data.client.model.Texture;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.projectile.FishingBobberEntity;
-import net.minecraft.item.CrossbowItem;
-import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.predicate.entity.EntityPredicates;
-import net.minecraft.predicate.entity.FishingHookPredicate;
-import net.minecraft.predicate.item.ItemPredicate;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 

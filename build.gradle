@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.10-SNAPSHOT'
+    id 'fabric-loom' version '0.11-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -9,10 +9,6 @@ targetCompatibility = JavaVersion.VERSION_17
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
-
-minecraft {
-    accessWidener = file("src/main/resources/fantasyorigins.accesswidener")
-}
 
 repositories {
     maven {
@@ -65,10 +61,8 @@ dependencies {
     //Origins
     modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
     //Pehkui
-    modImplementation "com.github.virtuoel:pehkui:${project.pehkui_version}"
-    //AppleSkin
-    modRuntime("squeek.appleskin:appleskin-fabric:${project.appleskin_version}") {
-        exclude module: 'modmenu'
+    modImplementation("com.github.virtuoel:pehkui:${pehkui_version}") {
+        exclude(group: "net.fabricmc.fabric-api")
     }
 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
@@ -105,13 +99,7 @@ jar {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            // add all the jars that should be included when publishing to maven
-            artifact(remapJar) {
-                builtBy remapJar
-            }
-            artifact(sourcesJar) {
-                builtBy remapSourcesJar
-            }
+            from components.java
         }
     }
 
