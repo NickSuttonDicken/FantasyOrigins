@@ -1,5 +1,6 @@
 package froztigaming.fantasyorigins.init;
 
+import froztigaming.fantasyorigins.FantasyOrigins;
 import froztigaming.fantasyorigins.client.render.entity.mob.GoblinEntityRenderer;
 import froztigaming.fantasyorigins.client.render.entity.mob.model.GoblinArmorModel;
 import froztigaming.fantasyorigins.client.render.entity.mob.model.GoblinEntityModel;
@@ -32,6 +33,7 @@ public class EntityInit {
 
     public static EntityType<TritonTridentEntity> TRITON_TRIDENT;
     public static EntityType<SpearEntity> SPEAR;
+    static boolean goblinEnable = FantasyOrigins.CONFIG.goblinsEnable;
 
     private static final Predicate<BiomeSelectionContext> goblinSpawnKeys = BiomeSelectors.includeByKey(
             BiomeKeys.DARK_FOREST,
@@ -68,12 +70,17 @@ public class EntityInit {
         TRITON_TRIDENT = register("triton_trident", createTridentEntityType(TritonTridentEntity::new));
         SPEAR = register("spear", createTridentEntityType(SpearEntity::new));
 
-        FabricDefaultAttributeRegistry.register(GOBLIN, GoblinEntity.createGoblinAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 14));
 
-        SpawnGroup spawnGroup = SpawnGroup.MONSTER;
+        if (goblinEnable)
+        {
+            FabricDefaultAttributeRegistry.register(GOBLIN, GoblinEntity.createGoblinAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 14));
 
-        BiomeModifications.addSpawn(goblinSpawnKeys, spawnGroup, GOBLIN, 8, 2, 4);
-        SpawnRestrictionAccessor.callRegister(GOBLIN, SpawnRestriction.Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, GoblinEntity::canSpawn);
+            SpawnGroup spawnGroup = SpawnGroup.MONSTER;
+
+            BiomeModifications.addSpawn(goblinSpawnKeys, spawnGroup, GOBLIN, 8, 2, 4);
+            SpawnRestrictionAccessor.callRegister(GOBLIN, SpawnRestriction.Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, GoblinEntity::canSpawn);
+        }
+
     }
 
     @Environment(EnvType.CLIENT)
