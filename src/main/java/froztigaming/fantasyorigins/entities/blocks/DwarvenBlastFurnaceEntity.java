@@ -9,7 +9,7 @@ import net.minecraft.recipe.RecipeType;
 import net.minecraft.screen.BlastFurnaceScreenHandler;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
+
 import net.minecraft.util.math.BlockPos;
 
 public class DwarvenBlastFurnaceEntity extends AbstractFurnaceBlockEntity {
@@ -20,7 +20,7 @@ public class DwarvenBlastFurnaceEntity extends AbstractFurnaceBlockEntity {
 
     @Override
     protected Text getContainerName() {
-        return new TranslatableText("container.dwarven_blast_furnace");
+        return Text.translatable("container.dwarven_blast_furnace");
     }
 
     @Override

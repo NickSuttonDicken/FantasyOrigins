@@ -9,7 +9,7 @@ import net.minecraft.recipe.RecipeType;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.SmokerScreenHandler;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
+
 import net.minecraft.util.math.BlockPos;
 
 public class HalflingOvenEntity extends AbstractFurnaceBlockEntity {
@@ -17,9 +17,10 @@ public class HalflingOvenEntity extends AbstractFurnaceBlockEntity {
     public HalflingOvenEntity(BlockPos pos, BlockState state){
         super(BlockInit.HALFLING_OVEN_ENTITY, pos, state, RecipeType.SMOKING);
     }
+
     @Override
     protected Text getContainerName() {
-        return new TranslatableText("container.halfling_oven");
+        return Text.translatable("container.halfling_oven");
     }
 
     @Override

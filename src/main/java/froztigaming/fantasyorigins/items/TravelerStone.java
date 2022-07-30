@@ -35,10 +35,10 @@ public class TravelerStone extends Item {
 
             switch (option) {
                 case 1 -> {
-                    user.sendSystemMessage(Text.of("Nether Dimension Selected"), user.getUuid());
+                    user.sendMessage(Text.of("Nether Dimension Selected"));
                 }
                 case 2 -> {
-                    user.sendSystemMessage(Text.of("End Dimension Selected"), user.getUuid());
+                    user.sendMessage(Text.of("End Dimension Selected"));
                 }
             }
         } else {

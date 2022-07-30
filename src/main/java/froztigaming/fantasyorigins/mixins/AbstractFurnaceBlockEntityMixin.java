@@ -30,7 +30,6 @@ public class AbstractFurnaceBlockEntityMixin extends BlockEntity {
         super(type, pos, state);
     }
 
-
     @Inject(
             method = "tick",
             at = @At("HEAD"))
@@ -41,7 +40,7 @@ public class AbstractFurnaceBlockEntityMixin extends BlockEntity {
     @Inject(
             method = "getCookTime",
             at = @At("RETURN"), cancellable = true)
-    private static void modifyCookTime(World world, RecipeType<? extends AbstractCookingRecipe> recipeType, Inventory inventory, CallbackInfoReturnable<Integer> cir) {
+    private static void modifyCookTime(World world, AbstractFurnaceBlockEntity furnace, CallbackInfoReturnable<Integer> cir) {
 
         if(fo_entityContext instanceof DwarvenBlastFurnaceEntity || fo_entityContext instanceof HalflingOvenEntity) {
             cir.setReturnValue(50);

@@ -28,12 +28,12 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.*;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class GoblinEntity extends HostileEntity implements RangedAttackMob {
     private static List<GoblinEntity> goblinEntities = new ArrayList<>();
@@ -115,7 +115,8 @@ public class GoblinEntity extends HostileEntity implements RangedAttackMob {
     @Nullable
     @Override
     public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, @Nullable EntityData entityData, @Nullable NbtCompound entityNbt) {
-        this.initEquipment(difficulty);
+        Random random = world.getRandom();
+        this.initEquipment(random ,difficulty);
         if (!this.getEquippedStack(EquipmentSlot.MAINHAND).isEmpty())
         {
             this.handDropChances[EquipmentSlot.MAINHAND.getEntitySlotId()] = 2.0f;
@@ -123,14 +124,15 @@ public class GoblinEntity extends HostileEntity implements RangedAttackMob {
         return super.initialize(world, difficulty, spawnReason, entityData, entityNbt);
     }
 
-    @Override
-    protected void initEquipment(LocalDifficulty difficulty) {
-        if ((double)this.random.nextFloat() > 0.9) {
-            int i = this.random.nextInt(16);
-            if (i < 10) {
-                this.equipStack(EquipmentSlot.MAINHAND, new ItemStack(ItemInit.SPEAR));
-            }
+    protected void initEquipment(Random random, LocalDifficulty difficulty) {
+        this.equipAtChance(EquipmentSlot.MAINHAND, new ItemStack(ItemInit.SPEAR), random);
+    }
+
+    private void equipAtChance(EquipmentSlot slot, ItemStack stack, Random random) {
+        if (random.nextFloat() < 0.1F) {
+            this.equipStack(slot, stack);
         }
+
     }
 
     private static List<GoblinEntity> getNearbyGoblins(Box box, LivingEntity entity)

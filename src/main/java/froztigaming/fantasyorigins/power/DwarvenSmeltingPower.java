@@ -9,14 +9,12 @@ import net.minecraft.block.entity.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class DwarvenSmeltingPower extends Power {
 
@@ -39,11 +37,11 @@ public class DwarvenSmeltingPower extends Power {
                 FantasyOriginsCriteria.DWARVEN_SMELTING.trigger((ServerPlayerEntity) player);
             }
             for (AbstractFurnaceBlockEntity b: furnaceBlockEntities) {
-                ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(Objects.requireNonNull(b.getWorld()), ((AbstractFurnaceBlockEntityInterfaceAccessor) b).getRecipe(), b) / 2);
+                ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(entity.getWorld(), b) / 2);
                 if (((AbstractFurnaceBlockEntityInterfaceAccessor) b).getCookTime() > ((AbstractFurnaceBlockEntityInterfaceAccessor) b).getCookTimeTotal())
                 {
                     ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTime(0);
-                    ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(Objects.requireNonNull(b.getWorld()), ((AbstractFurnaceBlockEntityInterfaceAccessor) b).getRecipe(), b) / 2);
+                    ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(entity.getWorld(), b) / 2);
                 }
             }
             furnaceBlockEntities.clear();

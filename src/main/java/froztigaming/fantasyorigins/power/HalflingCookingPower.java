@@ -40,11 +40,11 @@ public class HalflingCookingPower extends Power {
                 FantasyOriginsCriteria.HALFLING_COOKING.trigger((ServerPlayerEntity) player);
             }
             for (AbstractFurnaceBlockEntity b : furnaceBlockEntities) {
-                ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(Objects.requireNonNull(b.getWorld()), ((AbstractFurnaceBlockEntityInterfaceAccessor) b).getRecipe(), b) / 2);
+                ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(entity.getWorld(), b) / 2);
                 if (((AbstractFurnaceBlockEntityInterfaceAccessor) b).getCookTime() > ((AbstractFurnaceBlockEntityInterfaceAccessor) b).getCookTimeTotal())
                 {
                     ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTime(0);
-                    ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(Objects.requireNonNull(b.getWorld()), ((AbstractFurnaceBlockEntityInterfaceAccessor) b).getRecipe(), b) / 2);
+                    ((AbstractFurnaceBlockEntityInterfaceAccessor) b).setCookTimeTotal(AbstractFurnaceBlockEntityInterfaceAccessor.getCookTime(entity.getWorld(), b) / 2);
 
                 }
             }

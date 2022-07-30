@@ -1,14 +1,15 @@
 accessWidener v1 named
 
-accessible class net/minecraft/entity/Entity
+accessible    class    net/minecraft/entity/Entity
 
-accessible class net/minecraft/recipe/CookingRecipeSerializer$RecipeFactory
+accessible    class    net/minecraft/recipe/CookingRecipeSerializer$RecipeFactory
 
-accessible class net/minecraft/block/entity/AbstractFurnaceBlockEntity
+accessible    class    net/minecraft/block/entity/AbstractFurnaceBlockEntity
 
-accessible field net/minecraft/entity/projectile/TridentEntity tridentStack Lnet/minecraft/item/ItemStack;
-accessible field net/minecraft/entity/projectile/TridentEntity dealtDamage Z
+accessible    field    net/minecraft/entity/projectile/TridentEntity            tridentStack                Lnet/minecraft/item/ItemStack;
+accessible    field    net/minecraft/entity/projectile/TridentEntity            dealtDamage                 Z
 
+accessible    field    net/minecraft/block/entity/AbstractFurnaceBlockEntity     matchGetter                Lnet/minecraft/recipe/RecipeManager$MatchGetter;
 accessible    field    net/minecraft/item/TridentItem                            attributeModifiers         Lcom/google/common/collect/Multimap;
 mutable       field    net/minecraft/entity/attribute/EntityAttributeModifier    value                      D
 accessible    field    net/minecraft/entity/attribute/EntityAttributeModifier    value                      D

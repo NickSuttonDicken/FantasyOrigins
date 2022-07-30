@@ -80,10 +80,10 @@ public class DimensionalTravelPower extends Power implements Active {
 
                 switch (option) {
                     case 1 -> {
-                        entity.sendSystemMessage(Text.of("Nether Dimension Selected"), entity.getUuid());
+                        entity.sendMessage(Text.of("Nether Dimension Selected"));
                     }
                     case 2 -> {
-                        entity.sendSystemMessage(Text.of("End Dimension Selected"), entity.getUuid());
+                        entity.sendMessage(Text.of("End Dimension Selected"));
 
                     }
                 }

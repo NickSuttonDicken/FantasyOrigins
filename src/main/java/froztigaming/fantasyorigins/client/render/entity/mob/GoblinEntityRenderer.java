@@ -26,7 +26,7 @@ public class GoblinEntityRenderer extends MobEntityRenderer<GoblinEntity, Goblin
 
     public GoblinEntityRenderer(EntityRendererFactory.Context context) {
         super(context, new GoblinEntityModel(context.getPart(FantasyOriginsClient.GOBLIN_LAYER)), 0.4F);
-        this.addFeature(new HeldItemFeatureRenderer(this));
+        this.addFeature(new HeldItemFeatureRenderer(this, context.getHeldItemRenderer()));
         this.addFeature(new ArmorFeatureRenderer<>(this, new GoblinArmorModel(context.getPart(FantasyOriginsClient.GOBLIN_ARMOR_INNER)), new GoblinArmorModel(context.getPart(FantasyOriginsClient.GOBLIN_ARMOR_OUTER))));
     }
 
